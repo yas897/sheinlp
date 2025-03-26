@@ -1,0 +1,33 @@
+# Before running `git push`, ensure you have initialized a Git repository, added files, committed changes, and set up a remote repository.
+
+![Git Workflow](https://via.placeholder.com/600x200?text=Git+Workflow)
+
+## Steps to Push Changes to a Remote Repository
+
+### 1. Initialize a Git repository (if not already done)
+```bash
+git init
+```
+
+### 2. Add files to the staging area
+```bash
+git add .
+```
+
+### 3. Commit the changes
+```bash
+git commit -m "Initial commit"
+```
+
+### 4. Add a remote repository
+Replace `<your-repository-url>` with your repository URL.
+```bash
+git remote add origin <your-repository-url>
+```
+
+### 5. Push the changes to the remote repository
+```bash
+git push -u origin main
+```
+
+![Git Push](https://via.placeholder.com/600x200?text=Git+Push)
