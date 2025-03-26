@@ -1,0 +1,337 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #fff;
+    color: #333;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+}
+
+.logo {
+    margin-bottom: 20px;
+}
+
+.logo img {
+    width: 35%; /* Default size for mobile and smaller screens */
+    height: auto;
+}
+
+/* Media query for desktop screens */
+@media (min-width: 1024px) {
+    .logo img {
+        width: 15%; /* Make the logo smaller on desktop */
+    }
+}
+
+@media (max-width: 600px) {
+    .verified-badge {
+        padding: 1px 4px; /* Further reduce padding for mobile */
+        font-size: 10px;  /* Slightly smaller font size for mobile */
+    }
+
+    .review-header .name {
+        font-size: 14px; /* Slightly reduced font size for mobile readability */
+    }
+
+    .review-header .location {
+        font-size: 12px; /* Adjusted to maintain the hierarchy */
+    }
+}
+
+h1 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    line-height: 1.3;
+    color: #000;
+}
+
+.steps-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.steps {
+    font-size: 18px;
+    line-height: 1.6;
+    margin: 20px 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.steps li {
+    margin-bottom: 10px;
+}
+
+.cta-button {
+    background: #ff5c8d; /* Light Pink for SHEIN branding */
+    color: #fff;
+    padding: 20px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 20px;
+    max-width: 250px;
+    width: 80%;
+    line-height: 1.3;
+}
+
+.cta-button:hover {
+    box-shadow: 0 8px 15px rgba(255, 92, 141, 0.3);
+    transform: translateY(-3px);
+}
+
+.progress-bar {
+    height: 10px;
+    background: #ff5c8d; /* Light Pink for SHEIN branding */
+    width: 50%;
+    transition: width 1s ease;
+    border-radius: 10px;
+}
+
+.progress-bar-container {
+    background: #f0f0f0;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 10px 0;
+}
+
+.claim-stats {
+    margin-top: 15px;
+    font-size: 16px;
+    color: #555;
+}
+
+.divider {
+    margin: 40px 0;
+    border-top: 2px solid #000;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.reviews-title {
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+.reviews {
+    background: #f9f9f9;
+    border-radius: 8px;
+    padding: 15px;
+    margin-top: 10px;
+    text-align: left;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.review {
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.review:last-child {
+    border-bottom: none;
+}
+
+.review-header {
+    display: flex;
+    align-items: center;    /* Align the profile image and text */
+    flex-wrap: wrap;        /* Ensure the elements wrap correctly on smaller screens */
+}
+
+.review-header img {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+.review-header .name {
+    font-weight: bold;
+    font-size: 14px; /* Adjusted font size for better fit */
+    line-height: 1.2;
+}
+
+.review-header .location {
+    font-size: 13px;  /* Made slightly smaller than the name for hierarchy */
+    color: #777;
+    margin-top: 2px;
+    display: block;  /* Ensure location is always on a new line */
+}
+
+.verified-badge {
+    background-color: #ff5c8d; /* Light Pink for SHEIN branding */
+    color: #fff;
+    border-radius: 8px;  /* Reduced the corner radius */
+    padding: 3px 10px;   /* Adjusted padding for better fit */
+    font-size: 10px;     /* Reduced font size */
+    margin-left: 8px;
+    display: inline-flex;
+    align-items: center;
+    font-weight: bold;
+    box-shadow: 0 2px 4px rgba(255, 92, 141, 0.4); /* Light Pink Shadow for SHEIN branding */
+    white-space: nowrap;
+}
+
+.verified-badge img {
+    width: 12px;        /* Reduced icon size */
+    height: 12px;
+    margin-right: 4px;
+}
+
+.review-content {
+    margin-top: 5px;
+}
+
+.popup {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    padding: 15px;
+    display: none;
+    animation: fadein 1s;
+    z-index: 9999;
+}
+
+.popup img {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+.popup-content {
+    display: flex;
+    align-items: center;
+}
+
+.faq-section {
+    text-align: left;
+    max-width: 700px;
+    margin: 40px auto;
+}
+
+.faq-card {
+    background: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 15px;
+    transition: all 0.3s ease;
+}
+
+.faq-card:hover {
+    transform: translateY(-5px);
+}
+
+.faq-question {
+    font-weight: bold;
+    cursor: pointer;
+    padding: 15px;
+    margin: 0;
+    background-color: #ff5c8d; /* Light Pink for SHEIN branding */
+    color: #fff;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.faq-question:hover {
+    background-color: #e04870; /* Darker shade for hover effect */
+}
+
+.faq-answer {
+    display: none;
+    padding: 15px;
+    background-color: #fff;
+    border-top: 1px solid #ddd;
+}
+
+.faq-arrow {
+    transition: transform 0.3s ease;
+}
+
+.faq-arrow.open {
+    transform: rotate(180deg);
+}
+
+footer {
+    font-size: 14px;
+    color: #777;
+    margin-top: 40px;
+    padding-bottom: 20px;
+}
+
+@media (max-width: 600px) {
+    .verified-badge {
+        padding: 2px 6px; /* Further reduce padding for mobile */
+        font-size: 9px;   /* Slightly smaller font size for mobile */
+    }
+
+    .review-header .name {
+        font-size: 13px; /* Reduced for mobile readability */
+    }
+
+    .review-header .location {
+        font-size: 11px; /* Adjusted to maintain visual hierarchy */
+    }
+}
+
+body {
+    padding: 10px;
+}
+
+h1 {
+    font-size: 24px;
+    line-height: 1.2;
+}
+
+.steps-title {
+    font-size: 20px;
+}
+
+.steps {
+    font-size: 16px;
+}
+
+.cta-button {
+    padding: 16px 20px;
+    font-size: 18px;
+}
+
+.claim-stats {
+    font-size: 14px;
+}
+
+.reviews-title {
+    font-size: 20px;
+}
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 500px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+
+    .progress-bar-container {
+        width: 80%;
+        margin: 10px auto;
+    }
+
+    .divider {
+        width: 80%;
+    }
+}
